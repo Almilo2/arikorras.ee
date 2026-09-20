@@ -1,0 +1,1 @@
+const toolsLink=document.createElement('a');toolsLink.href='tools.html';toolsLink.textContent='Инструменты';toolsLink.className='tools-nav-link';const desktopNav=document.querySelector('.desktop-nav');if(desktopNav&&!desktopNav.querySelector('[href="tools.html"]'))desktopNav.appendChild(toolsLink);
