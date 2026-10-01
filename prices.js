@@ -1,4 +1,97 @@
-const priceText={ru:{navServices:'Услуги',navAbout:'О нас',navPrices:'Цены',navContact:'Контакты',headerCta:'Обсудить задачу <span>↗</span>',heroLabel:'УСЛУГИ И СТОИМОСТЬ',heroTitle:'Понятные условия<br><em>без скрытых доплат.</em>',heroText:'Выберите подходящий пакет или обратитесь к нам для индивидуального расчёта. ELBARES OÜ не является плательщиком НДС, поэтому к указанным ценам НДС не добавляется.',accountingHeading:'Ежемесячное бухгалтерское обслуживание',startText:'Для небольших предприятий с минимальным количеством операций.',standardText:'Для работающих предприятий с регулярными операциями.',businessText:'Для предприятий с большим объёмом операций и более сложным учётом.',accountingNote:'Окончательная стоимость зависит от количества документов, банковских счетов, работников и налоговых обязательств предприятия. Работы вне пакета — 40 € в час.',extraHeading:'Дополнительные бухгалтерские услуги',extra1:'Бухгалтерская или налоговая консультация',extra2:'Проверка и восстановление учёта',extra3:'Настройка Merit Aktiva или Merit Palk',extra4:'Подготовка статистических отчётов',extra5:'Годовой отчёт неактивного предприятия',extra6:'Годовой отчёт действующего предприятия',companyHeading:'Создание предприятия',company1:'Регистрация FIE',company2:'Регистрация OÜ',company3:'Регистрация MTÜ',company4:'Изменение данных в e-Äriregister',company5:'Ликвидация OÜ',docsHeading:'Кадровые документы',doc1:'Трудовой договор',doc2:'Должностная инструкция',doc3:'Изменение трудового договора',doc4:'Комплект документов для одного работника',legalNote:'<strong>Важно знать.</strong> Государственные пошлины, нотариальные расходы, переводы и услуги третьих лиц оплачиваются отдельно. Точная цена определяется после предварительной проверки документов предприятия.',offerButton:'Получить предложение <span>↗</span>',websiteButton:'Цены на создание сайтов <span>↗</span>',homeButton:'На главную <span>↗</span>'},et:{navServices:'Teenused',navAbout:'Meist',navPrices:'Hinnad',navContact:'Kontakt',headerCta:'Arutame teie ülesannet <span>↗</span>',heroLabel:'TEENUSED JA HINNAD',heroTitle:'Selged tingimused<br><em>ilma varjatud lisatasudeta.</em>',heroText:'Valige sobiv pakett või küsige personaalset pakkumist. ELBARES OÜ ei ole käibemaksukohustuslane, seega käibemaksu hindadele ei lisandu.',accountingHeading:'Igakuine raamatupidamisteenus',startText:'Väikestele ettevõtetele minimaalse tehingute arvuga.',standardText:'Tegutsevatele ettevõtetele regulaarsete tehingutega.',businessText:'Ettevõtetele suure mahu või keerukama arvestusega.',accountingNote:'Lõplik hind sõltub dokumentide, pangakontode, töötajate ja maksukohustuste arvust. Paketivälised tööd maksavad 40 € tunnis.',extraHeading:'Täiendavad raamatupidamisteenused',extra1:'Raamatupidamis- või maksukonsultatsioon',extra2:'Arvestuse kontroll ja taastamine',extra3:'Merit Aktiva või Merit Palk seadistamine',extra4:'Statistiliste aruannete koostamine',extra5:'Tegevuseta ettevõtte aastaaruanne',extra6:'Tegutseva ettevõtte aastaaruanne',companyHeading:'Ettevõtte loomine',company1:'FIE registreerimine',company2:'OÜ registreerimine',company3:'MTÜ registreerimine',company4:'Andmete muutmine e-Äriregistris',company5:'OÜ likvideerimine',docsHeading:'Personalidokumendid',doc1:'Tööleping',doc2:'Ametijuhend',doc3:'Töölepingu muutmine',doc4:'Ühe töötaja dokumendikomplekt',legalNote:'<strong>Oluline.</strong> Riigilõivud, notarikulud, tõlked ja kolmandate isikute teenused tasutakse eraldi. Täpne hind selgub pärast dokumentide esmast kontrolli.',offerButton:'Küsi pakkumist <span>↗</span>',websiteButton:'Veebilehtede hinnad <span>↗</span>',homeButton:'Avalehele <span>↗</span>'},en:{navServices:'Services',navAbout:'About us',navPrices:'Prices',navContact:'Contact',headerCta:'Discuss your project <span>↗</span>',heroLabel:'SERVICES AND PRICING',heroTitle:'Clear terms<br><em>with no hidden fees.</em>',heroText:'Choose a suitable package or contact us for a custom quote. ELBARES OÜ is not VAT registered, so VAT is not added to the listed prices.',accountingHeading:'Monthly accounting service',startText:'For small businesses with minimal activity.',standardText:'For active businesses with regular transactions.',businessText:'For businesses with larger volumes or more complex accounting.',accountingNote:'The final price depends on the number of documents, bank accounts, employees and tax obligations. Work outside the package is charged at 40 € per hour.',extraHeading:'Additional accounting services',extra1:'Accounting or tax consultation',extra2:'Accounting review and recovery',extra3:'Merit Aktiva or Merit Palk setup',extra4:'Statistical reports',extra5:'Annual report for an inactive company',extra6:'Annual report for an active company',companyHeading:'Company formation',company1:'FIE registration',company2:'OÜ registration',company3:'MTÜ registration',company4:'Changes in the e-Business Register',company5:'OÜ liquidation',docsHeading:'Employment documents',doc1:'Employment contract',doc2:'Job description',doc3:'Employment contract amendment',doc4:'Document set for one employee',legalNote:'<strong>Good to know.</strong> State fees, notary costs, translations and third-party services are charged separately. The exact price is confirmed after an initial document review.',offerButton:'Get a proposal <span>↗</span>',websiteButton:'Website pricing <span>↗</span>',homeButton:'Back to home <span>↗</span>'}};
-const priceLists={start:{ru:['до 20 первичных документов','один банковский счёт','счета покупки и продажи','налоговые декларации','краткие консультации'],et:['kuni 20 algdokumenti','üks pangakonto','ostu- ja müügiarved','maksudeklaratsioonid','lühikonsultatsioonid'],en:['up to 20 source documents','one bank account','purchase and sales invoices','tax returns','brief consultations']},standard:{ru:['текущий бухгалтерский учёт','счета, чеки и банковские операции','налоговые декларации и зарплата','учёт основных средств','контроль расчётов'],et:['jooksev raamatupidamine','arved, tšekid ja pangatehingud','maksudeklaratsioonid ja palgaarvestus','põhivara arvestus','arvelduste kontroll'],en:['ongoing accounting','invoices, receipts and bank transactions','tax returns and payroll','fixed asset accounting','settlement control']},business:{ru:['полное ведение учёта','расчёт заработной платы','налоговые декларации','управленческая информация','регулярные консультации'],et:['täielik raamatupidamine','palgaarvestus','maksudeklaratsioonid','juhtimisinfo','regulaarsed konsultatsioonid'],en:['full accounting','payroll','tax returns','management information','regular consultations']}};
-function setPriceLanguage(lang){const text=priceText[lang];document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{if(text[el.dataset.i18n])el.innerHTML=text[el.dataset.i18n]});document.querySelectorAll('[data-list]').forEach(el=>el.innerHTML=priceLists[el.dataset.list][lang].map(item=>`<li>${item}</li>`).join(''));document.querySelectorAll('.lang').forEach(el=>el.classList.toggle('active',el.dataset.lang===lang));localStorage.setItem('arikorras-lang',lang)}
-setPriceLanguage(localStorage.getItem('arikorras-lang')||'ru');document.querySelectorAll('.lang').forEach(button=>button.addEventListener('click',()=>setPriceLanguage(button.dataset.lang)));
+const priceText = {
+  et: {
+    documentTitle: 'Hinnakiri | ÄRI KORRAS', documentDescription: 'ÄRI KORRAS teenuste hinnakiri: raamatupidamine, nõustamine, personalidokumendid ja kodulehed.',
+    navServices: 'Teenused', navAbout: 'Meist', navPrices: 'Hinnad', navContact: 'Kontakt',
+    headerCta: 'Küsi pakkumist <span>↗</span>', heroLabel: 'ÄRI KORRAS HINNAKIRI',
+    heroTitle: 'Selged hinnad,<br><em>kokkulepitud töö.</em>',
+    heroText: 'Raamatupidamise kuutasu sõltub dokumentide arvust ja ettevõtte töökorraldusest. Paketi täpne sisu kinnitatakse pakkumises.',
+    accountingHeading: 'Igakuine raamatupidamine', accountingIntro: 'Paketi täpne sisu kinnitatakse personaalses pakkumises.',
+    startPrice: 'alates 50 € kuus', startItem1: 'Kuni 20 algdokumenti ja 1 pangakonto.',
+    startItem2: 'Ostu- ja müügiarvete ning pangatehingute arvestus.', startItem3: 'Maksudeklaratsioonid ja palgaarvestus lisatasu eest.',
+    standardPrice: 'alates 120 € kuus', standardItem1: 'Kuni 50 algdokumenti.',
+    standardItem2: 'Jooksev raamatupidamine ja vajalikud maksudeklaratsioonid.', standardItem3: 'Ühe töötaja palgaarvestus.',
+    businessPrice: 'alates 200 € kuus', businessItem1: 'Kuni 100 algdokumenti.',
+    businessItem2: 'Jooksev arvestus, maksudeklaratsioonid ja põhivara arvestus.', businessItem3: 'Kuni kolme töötaja palgaarvestus.',
+    accountingNote: 'Üle 100 algdokumendi kuus: individuaalne pakkumine. Ostuarve, müügiarve või kviitung on üks algdokument; sellega seotud pangamakse ei lisandu dokumendilimiidile.',
+    reportsHeading: 'Aruanded ja nõustamine', consultation: 'Raamatupidamis- või maksukonsultatsioon', consultationPrice: '40 €/tund',
+    statistics: 'Statistikaaruanne', statisticsPrice: 'alates 25 €', inactiveReport: 'Tegevuseta ettevõtte majandusaasta aruanne', inactivePrice: 'alates 80 €',
+    activeReport: 'Tegutseva ettevõtte majandusaasta aruanne', activePrice: 'alates 150 €', incompleteBooks: 'Puuduliku arvestuse korral', hourlyPrice: '40 €/tund',
+    otherHeading: 'Muud teenused', personnel: 'Personalidokumendid', uponRequest: 'hind päringu alusel',
+    accountingTakeover: 'Varasema arvestuse kontroll, parandamine ja taastamine ning raamatupidamise ülevõtmine', byAgreement: 'töö maht ja hind kokkuleppel',
+    webHeading: 'Kodulehtede loomine', businessCard: 'Visiitkaardileht (1 leht)', businessCardPrice: 'alates 450 €',
+    companySite: 'Ettevõtte koduleht (kuni 5 lehte)', companySitePrice: 'alates 900 €', complexSite: 'Keerukam veebileht või e-pood',
+    individualOffer: 'individuaalne pakkumine', webNote: 'Domeen, majutus, tekstid, tõlked ja lisafunktsioonid lepitakse eraldi kokku.',
+    vatNote: 'ELBARES OÜ ei ole käibemaksukohustuslane; nimetatud hindadele käibemaksu ei lisandu.',
+    offerButton: 'Küsi personaalset pakkumist <span>↗</span>', homeButton: 'Avalehele <span>↗</span>'
+  },
+  ru: {
+    documentTitle: 'Цены | ÄRI KORRAS', documentDescription: 'Цены ÄRI KORRAS: бухгалтерия, консультации, кадровые документы и создание сайтов.',
+    navServices: 'Услуги', navAbout: 'О нас', navPrices: 'Цены', navContact: 'Контакты',
+    headerCta: 'Получить предложение <span>↗</span>', heroLabel: 'ЦЕНЫ ÄRI KORRAS',
+    heroTitle: 'Понятные цены,<br><em>согласованный объём.</em>',
+    heroText: 'Ежемесячная стоимость бухгалтерского обслуживания зависит от объёма документов и особенностей работы компании. Точный состав пакета подтверждается в предложении.',
+    accountingHeading: 'Ежемесячное бухгалтерское обслуживание', accountingIntro: 'Точный состав пакета подтверждается в индивидуальном предложении.',
+    startPrice: 'от 50 € в месяц', startItem1: 'До 20 первичных документов и один банковский счёт.',
+    startItem2: 'Учёт счетов покупки и продажи, банковских операций.', startItem3: 'Налоговые декларации и зарплата оплачиваются отдельно.',
+    standardPrice: 'от 120 € в месяц', standardItem1: 'До 50 первичных документов.',
+    standardItem2: 'Текущий учёт и необходимые налоговые декларации.', standardItem3: 'Расчёт зарплаты одного работника.',
+    businessPrice: 'от 200 € в месяц', businessItem1: 'До 100 первичных документов.',
+    businessItem2: 'Текущий учёт, налоговые декларации и учёт основных средств.', businessItem3: 'Расчёт зарплаты до трёх работников.',
+    accountingNote: 'Более 100 первичных документов в месяц — индивидуальное предложение. Один счёт покупки, счёт продажи или чек считается одним документом; связанный банковский платёж повторно в лимит не включается.',
+    reportsHeading: 'Отчёты и консультации', consultation: 'Бухгалтерская или налоговая консультация', consultationPrice: '40 €/час',
+    statistics: 'Статистический отчёт', statisticsPrice: 'от 25 €', inactiveReport: 'Годовой отчёт предприятия без деятельности', inactivePrice: 'от 80 €',
+    activeReport: 'Годовой отчёт действующего предприятия', activePrice: 'от 150 €', incompleteBooks: 'При неполном учёте', hourlyPrice: '40 €/час',
+    otherHeading: 'Другие услуги', personnel: 'Кадровые документы', uponRequest: 'цена по запросу',
+    accountingTakeover: 'Проверка, исправление и восстановление учёта за прошлые периоды, переход от прежнего бухгалтера', byAgreement: 'объём и цена по договорённости',
+    webHeading: 'Создание сайтов', businessCard: 'Сайт-визитка (1 страница)', businessCardPrice: 'от 450 €',
+    companySite: 'Сайт для бизнеса (до 5 страниц)', companySitePrice: 'от 900 €', complexSite: 'Сложный сайт или интернет-магазин',
+    individualOffer: 'индивидуальное предложение', webNote: 'Домен, хостинг, тексты, переводы и дополнительные функции согласовываются отдельно.',
+    vatNote: 'ELBARES OÜ не является плательщиком НДС; к указанным ценам НДС не добавляется.',
+    offerButton: 'Получить индивидуальное предложение <span>↗</span>', homeButton: 'На главную <span>↗</span>'
+  },
+  en: {
+    documentTitle: 'Prices | ÄRI KORRAS', documentDescription: 'ÄRI KORRAS prices for accounting, advice, employment documents and website creation.',
+    navServices: 'Services', navAbout: 'About us', navPrices: 'Prices', navContact: 'Contact',
+    headerCta: 'Request a quote <span>↗</span>', heroLabel: 'ÄRI KORRAS PRICES',
+    heroTitle: 'Clear prices,<br><em>agreed scope.</em>',
+    heroText: 'The monthly accounting fee depends on the number of documents and how the company operates. The exact package scope is confirmed in the quote.',
+    accountingHeading: 'Monthly accounting', accountingIntro: 'The exact package scope is confirmed in a personalised quote.',
+    startPrice: 'from €50 per month', startItem1: 'Up to 20 source documents and 1 bank account.',
+    startItem2: 'Recording purchase and sales invoices and bank transactions.', startItem3: 'Tax returns and payroll are charged separately.',
+    standardPrice: 'from €120 per month', standardItem1: 'Up to 50 source documents.',
+    standardItem2: 'Ongoing accounting and required tax returns.', standardItem3: 'Payroll for one employee.',
+    businessPrice: 'from €200 per month', businessItem1: 'Up to 100 source documents.',
+    businessItem2: 'Ongoing accounting, tax returns and fixed asset accounting.', businessItem3: 'Payroll for up to three employees.',
+    accountingNote: 'More than 100 source documents per month: individual quote. Each purchase invoice, sales invoice or receipt counts as one source document; the related bank payment does not count toward the limit.',
+    reportsHeading: 'Reports and advice', consultation: 'Accounting or tax consultation', consultationPrice: '€40/hour',
+    statistics: 'Statistical report', statisticsPrice: 'from €25', inactiveReport: 'Annual report for an inactive company', inactivePrice: 'from €80',
+    activeReport: 'Annual report for an operating company', activePrice: 'from €150', incompleteBooks: 'Work with incomplete records', hourlyPrice: '€40/hour',
+    otherHeading: 'Other services', personnel: 'Employment documents', uponRequest: 'price on request',
+    accountingTakeover: 'Review, correction or reconstruction of prior accounting periods, and taking over accounting', byAgreement: 'scope and price by agreement',
+    webHeading: 'Website creation', businessCard: 'One-page website', businessCardPrice: 'from €450',
+    companySite: 'Business website (up to 5 pages)', companySitePrice: 'from €900', complexSite: 'Complex website or online store',
+    individualOffer: 'individual quote', webNote: 'Domain, hosting, copy, translations and additional features are agreed separately.',
+    vatNote: 'ELBARES OÜ is not VAT registered; VAT is not added to the prices shown.',
+    offerButton: 'Request a personalised quote <span>↗</span>', homeButton: 'Home <span>↗</span>'
+  }
+};
+
+function setPriceLanguage(language) {
+  const text = priceText[language] || priceText.et;
+  document.documentElement.lang = language;
+  document.title = text.documentTitle;
+  document.querySelector('meta[name="description"]').content = text.documentDescription;
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const value = text[element.dataset.i18n];
+    if (value) element.innerHTML = value;
+  });
+  document.querySelectorAll('.lang').forEach((button) => {
+    button.classList.toggle('active', button.dataset.lang === language);
+  });
+  localStorage.setItem('arikorras-lang-v2', language);
+}
+
+setPriceLanguage(localStorage.getItem('arikorras-lang-v2') || 'et');
+document.querySelectorAll('.lang').forEach((button) => {
+  button.addEventListener('click', () => setPriceLanguage(button.dataset.lang));
+});
