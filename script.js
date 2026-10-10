@@ -15,8 +15,8 @@ const siteText = {
     heroLead: 'Raamatupidamine ja professionaalsed dokumendid Eesti ettevõtetele.',
     heroText: 'Aitame ettevõtjatel hoida raamatupidamise korras, täita aruandluskohustusi ja vormistada tööks vajalikud dokumendid. Teenuse sisu ja hind lepime kokku enne töö alustamist.',
     getOffer: 'Küsi pakkumist <span>↗</span>', viewServices: 'Vaata teenuseid <span>↓</span>',
-    heroNote: '18 aastat kogemust · raamatupidaja kutsetunnistus, tase 5 · Tallinn',
-    sectionServices: 'TEENUSED', introTitle: 'Äri korras,<br><em>meel rahul</em>',
+    heroNote: '18 aastat kogemust · raamatupidaja kutsetunnistus, tase 5 · teenused üle Eesti',
+    sectionServices: 'TEENUSED', introTitle: 'Teenused teie ettevõttele',
     introText: 'Aitame ettevõtjatel hoida raamatupidamise korras, täita aruandluskohustusi ja vormistada tööks vajalikud dokumendid. Teenuse sisu ja hind lepime kokku enne töö alustamist.',
     accountingTitle: 'Raamatupidamine',
     accountingText: 'Igakuine raamatupidamine OÜ-le, FIE-le ja MTÜ-le. Kajastame ostu- ja müügiarveid ning pangatehinguid, koostame kokkulepitud maksudeklaratsioonid ja arvestame töötasusid. Valmistame ette majandusaasta aruandeid ning aitame vajadusel varasemate perioodide arvestust kontrollida või korrastada.',
@@ -41,6 +41,8 @@ const siteText = {
     contactText: 'Kirjeldage oma ettevõtte tegevust, dokumentide ligikaudset arvu kuus, töötajate arvu ja käibemaksukohustuslase staatust. Täpsustame vajadused ning teeme personaalse pakkumise.',
     nameLabel: 'Teie nimi', emailLabel: 'E-post', messageLabel: 'Teie päring',
     formButton: 'Küsi pakkumist <span>↗</span>', formSuccess: 'Avaneb e-kiri teie päringu tekstiga. Palun saatke kiri.',
+    formPrivacy: 'Vormi saatmisega nõustute esitatud andmete töötlemisega päringule vastamiseks.',
+    privacyLink: 'Privaatsustingimused', footerPrivacy: 'Privaatsustingimused <span>↗</span>',
     footerTagline: 'Äri korras, meel rahul.', footerContact: 'KONTAKT', footerLegal: 'TEENUSEOSUTAJA', footerPrices: 'Hinnakiri <span>↗</span>'
   },
   ru: {
@@ -59,8 +61,8 @@ const siteText = {
     heroLead: 'Бухгалтерские услуги и профессиональные документы для компаний Эстонии.',
     heroText: 'Помогаем предпринимателям вести учёт, выполнять обязанности по отчётности и оформлять необходимые для работы документы. Состав услуг и стоимость согласовываем до начала работы.',
     getOffer: 'Получить предложение <span>↗</span>', viewServices: 'Посмотреть услуги <span>↓</span>',
-    heroNote: '18 лет опыта · квалификация бухгалтера, уровень 5 · Таллинн',
-    sectionServices: 'УСЛУГИ', introTitle: 'Когда бизнес<br><em>в порядке</em>',
+    heroNote: '18 лет опыта · квалификация бухгалтера, уровень 5 · услуги по всей Эстонии',
+    sectionServices: 'УСЛУГИ', introTitle: 'Услуги для вашего бизнеса',
     introText: 'Помогаем предпринимателям вести учёт, выполнять обязанности по отчётности и оформлять необходимые для работы документы. Состав услуг и стоимость согласовываем до начала работы.',
     accountingTitle: 'Бухгалтерские услуги',
     accountingText: 'Ежемесячное бухгалтерское обслуживание OÜ, FIE и MTÜ. Учитываем счета покупки и продажи, банковские операции, составляем согласованные налоговые декларации и рассчитываем зарплату. Готовим годовые отчёты, а при необходимости проверяем и приводим в порядок учёт за прошлые периоды.',
@@ -85,6 +87,8 @@ const siteText = {
     contactText: 'Расскажите о деятельности компании, примерном количестве документов в месяц, работниках и регистрации по НДС. Мы уточним задачу и подготовим индивидуальное предложение.',
     nameLabel: 'Ваше имя', emailLabel: 'Электронная почта', messageLabel: 'Ваш запрос',
     formButton: 'Получить предложение <span>↗</span>', formSuccess: 'Откроется письмо с вашим запросом. Отправьте его из почтового приложения.',
+    formPrivacy: 'Отправляя форму, вы соглашаетесь на обработку указанных данных для ответа на запрос.',
+    privacyLink: 'Политика конфиденциальности', footerPrivacy: 'Политика конфиденциальности <span>↗</span>',
     footerTagline: 'Бизнес в порядке, вы спокойны.', footerContact: 'КОНТАКТЫ', footerLegal: 'УСЛУГУ ОКАЗЫВАЕТ', footerPrices: 'Цены на услуги <span>↗</span>'
   },
   en: {
@@ -103,8 +107,8 @@ const siteText = {
     heroLead: 'Accounting and professional documents for Estonian companies.',
     heroText: 'We help entrepreneurs keep their accounts in order, meet reporting obligations and prepare the documents they need for work. We agree on the scope and price before work begins.',
     getOffer: 'Request a quote <span>↗</span>', viewServices: 'View services <span>↓</span>',
-    heroNote: '18 years of experience · professional accountant, level 5 · Tallinn',
-    sectionServices: 'SERVICES', introTitle: 'Business in order,<br><em>peace of mind</em>',
+    heroNote: '18 years of experience · professional accountant, level 5 · serving businesses across Estonia',
+    sectionServices: 'SERVICES', introTitle: 'Services for your business',
     introText: 'We help entrepreneurs keep their accounts in order, meet reporting obligations and prepare the documents they need for work. We agree on the scope and price before work begins.',
     accountingTitle: 'Accounting',
     accountingText: 'Monthly accounting for OÜ, FIE and MTÜ. We record purchase and sales invoices and bank transactions, prepare agreed tax returns and calculate payroll. We prepare annual reports and, when needed, review or organise accounting for previous periods.',
@@ -129,6 +133,8 @@ const siteText = {
     contactText: 'Tell us what your company does, the approximate number of documents per month, the number of employees and whether the company is VAT-registered. We will clarify your needs and prepare a personalised quote.',
     nameLabel: 'Your name', emailLabel: 'Email address', messageLabel: 'Your request',
     formButton: 'Request a quote <span>↗</span>', formSuccess: 'An email with your request will open. Please send it from your email app.',
+    formPrivacy: 'By sending the form, you agree to the processing of the information provided so we can respond to your enquiry.',
+    privacyLink: 'Privacy policy', footerPrivacy: 'Privacy policy <span>↗</span>',
     footerTagline: 'Business in order, peace of mind.', footerContact: 'CONTACT', footerLegal: 'SERVICE PROVIDER', footerPrices: 'Service prices <span>↗</span>'
   }
 };
@@ -162,6 +168,21 @@ function setSiteLanguage(language) {
   });
   localStorage.setItem('arikorras-lang-v2', language);
 }
+
+const privacyNotice = document.createElement('p');
+privacyNotice.className = 'form-privacy';
+privacyNotice.innerHTML = '<span data-i18n="formPrivacy"></span> <a href="privacy.html" data-i18n="privacyLink"></a>';
+document.querySelector('#contact-form button[type="submit"]').before(privacyNotice);
+
+const providerDetails = document.createElement('div');
+providerDetails.className = 'footer-provider-details';
+providerDetails.innerHTML = '<span>registrikood 11188120</span><span>Narva linn</span><a href="mailto:info@arikorras.ee">info@arikorras.ee</a>';
+document.querySelector('.footer-grid > div:last-child').append(providerDetails);
+
+const footerPrivacyLink = document.createElement('a');
+footerPrivacyLink.href = 'privacy.html';
+footerPrivacyLink.dataset.i18n = 'footerPrivacy';
+document.querySelector('.footer-bottom').append(footerPrivacyLink);
 
 setSiteLanguage(localStorage.getItem('arikorras-lang-v2') || 'et');
 document.querySelectorAll('.lang').forEach((button) => {

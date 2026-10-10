@@ -1,3 +1,10 @@
+const footer = document.querySelector('.footer-bottom');
+footer.querySelector('span').innerHTML = '© 2026 ÄRI KORRAS · ELBARES OÜ · registrikood 11188120 · Narva linn · <a href="mailto:info@arikorras.ee">info@arikorras.ee</a>';
+const footerPrivacyLink = document.createElement('a');
+footerPrivacyLink.href = 'privacy.html';
+footerPrivacyLink.dataset.i18n = 'footerPrivacy';
+footer.insertBefore(footerPrivacyLink, footer.querySelector('a'));
+
 const priceText = {
   et: {
     documentTitle: 'Hinnakiri | ÄRI KORRAS', documentDescription: 'ÄRI KORRAS teenuste hinnakiri: raamatupidamine, nõustamine, personalidokumendid ja kodulehed.',
@@ -7,7 +14,7 @@ const priceText = {
     heroText: 'Raamatupidamise kuutasu sõltub dokumentide arvust ja ettevõtte töökorraldusest. Paketi täpne sisu kinnitatakse pakkumises.',
     accountingHeading: 'Igakuine raamatupidamine', accountingIntro: 'Paketi täpne sisu kinnitatakse personaalses pakkumises.',
     startPrice: 'alates 50 € kuus', startItem1: 'Kuni 20 algdokumenti ja 1 pangakonto.',
-    startItem2: 'Ostu- ja müügiarvete ning pangatehingute arvestus.', startItem3: 'Maksudeklaratsioonid ja palgaarvestus lisatasu eest.',
+    startItem2: 'Ostu- ja müügiarvete ning pangatehingute arvestus.', startItem3: 'Maksudeklaratsioonide koostamise ja palgaarvestuse saab paketile lisada lisatasu eest.',
     standardPrice: 'alates 120 € kuus', standardItem1: 'Kuni 50 algdokumenti.',
     standardItem2: 'Jooksev raamatupidamine ja vajalikud maksudeklaratsioonid.', standardItem3: 'Ühe töötaja palgaarvestus.',
     businessPrice: 'alates 200 € kuus', businessItem1: 'Kuni 100 algdokumenti.',
@@ -22,7 +29,7 @@ const priceText = {
     companySite: 'Ettevõtte koduleht (kuni 5 lehte)', companySitePrice: 'alates 900 €', complexSite: 'Keerukam veebileht või e-pood',
     individualOffer: 'individuaalne pakkumine', webNote: 'Domeen, majutus, tekstid, tõlked ja lisafunktsioonid lepitakse eraldi kokku.',
     vatNote: 'ELBARES OÜ ei ole käibemaksukohustuslane; nimetatud hindadele käibemaksu ei lisandu.',
-    offerButton: 'Küsi personaalset pakkumist <span>↗</span>', homeButton: 'Avalehele <span>↗</span>'
+    offerButton: 'Küsi personaalset pakkumist <span>↗</span>', homeButton: 'Avalehele <span>↗</span>', footerPrivacy: 'Privaatsustingimused <span>↗</span>'
   },
   ru: {
     documentTitle: 'Цены | ÄRI KORRAS', documentDescription: 'Цены ÄRI KORRAS: бухгалтерия, консультации, кадровые документы и создание сайтов.',
@@ -32,7 +39,7 @@ const priceText = {
     heroText: 'Ежемесячная стоимость бухгалтерского обслуживания зависит от объёма документов и особенностей работы компании. Точный состав пакета подтверждается в предложении.',
     accountingHeading: 'Ежемесячное бухгалтерское обслуживание', accountingIntro: 'Точный состав пакета подтверждается в индивидуальном предложении.',
     startPrice: 'от 50 € в месяц', startItem1: 'До 20 первичных документов и один банковский счёт.',
-    startItem2: 'Учёт счетов покупки и продажи, банковских операций.', startItem3: 'Налоговые декларации и зарплата оплачиваются отдельно.',
+    startItem2: 'Учёт счетов покупки и продажи, банковских операций.', startItem3: 'Подготовка налоговых деклараций и расчёт заработной платы могут быть добавлены к пакету за дополнительную плату.',
     standardPrice: 'от 120 € в месяц', standardItem1: 'До 50 первичных документов.',
     standardItem2: 'Текущий учёт и необходимые налоговые декларации.', standardItem3: 'Расчёт зарплаты одного работника.',
     businessPrice: 'от 200 € в месяц', businessItem1: 'До 100 первичных документов.',
@@ -47,7 +54,7 @@ const priceText = {
     companySite: 'Сайт для бизнеса (до 5 страниц)', companySitePrice: 'от 900 €', complexSite: 'Сложный сайт или интернет-магазин',
     individualOffer: 'индивидуальное предложение', webNote: 'Домен, хостинг, тексты, переводы и дополнительные функции согласовываются отдельно.',
     vatNote: 'ELBARES OÜ не является плательщиком НДС; к указанным ценам НДС не добавляется.',
-    offerButton: 'Получить индивидуальное предложение <span>↗</span>', homeButton: 'На главную <span>↗</span>'
+    offerButton: 'Получить индивидуальное предложение <span>↗</span>', homeButton: 'На главную <span>↗</span>', footerPrivacy: 'Политика конфиденциальности <span>↗</span>'
   },
   en: {
     documentTitle: 'Prices | ÄRI KORRAS', documentDescription: 'ÄRI KORRAS prices for accounting, advice, employment documents and website creation.',
@@ -57,7 +64,7 @@ const priceText = {
     heroText: 'The monthly accounting fee depends on the number of documents and how the company operates. The exact package scope is confirmed in the quote.',
     accountingHeading: 'Monthly accounting', accountingIntro: 'The exact package scope is confirmed in a personalised quote.',
     startPrice: 'from €50 per month', startItem1: 'Up to 20 source documents and 1 bank account.',
-    startItem2: 'Recording purchase and sales invoices and bank transactions.', startItem3: 'Tax returns and payroll are charged separately.',
+    startItem2: 'Recording purchase and sales invoices and bank transactions.', startItem3: 'Preparation of tax returns and payroll calculation can be added to the package for an additional fee.',
     standardPrice: 'from €120 per month', standardItem1: 'Up to 50 source documents.',
     standardItem2: 'Ongoing accounting and required tax returns.', standardItem3: 'Payroll for one employee.',
     businessPrice: 'from €200 per month', businessItem1: 'Up to 100 source documents.',
@@ -72,7 +79,7 @@ const priceText = {
     companySite: 'Business website (up to 5 pages)', companySitePrice: 'from €900', complexSite: 'Complex website or online store',
     individualOffer: 'individual quote', webNote: 'Domain, hosting, copy, translations and additional features are agreed separately.',
     vatNote: 'ELBARES OÜ is not VAT registered; VAT is not added to the prices shown.',
-    offerButton: 'Request a personalised quote <span>↗</span>', homeButton: 'Home <span>↗</span>'
+    offerButton: 'Request a personalised quote <span>↗</span>', homeButton: 'Home <span>↗</span>', footerPrivacy: 'Privacy policy <span>↗</span>'
   }
 };
 
